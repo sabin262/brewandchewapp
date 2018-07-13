@@ -12,13 +12,13 @@
 	  </thead>
 	  <tbody>
 	  	<% id=0 %>
-	  	<% @food.each do |f| %>
+	  	<% @food.each do |food| %>
 	    <tr>
 	      <th scope="row"><%= id = id + 1 %></th>
-	      <td><%= f.id %></td>
-	      <td><%= link_to f.name, "#" %></td>
-	      <td><%= f.price %></td>
-	      <td><%= f.category %></td>
+	      <td><%= food.id %></td>
+	      <td><%= link_to food.name, edit_food_path(food) %></td>
+	      <td><%= food.price %></td>
+	      <td><%= food.category %></td>
 	    </tr>
 	    <% end %>
 	  </tbody>
