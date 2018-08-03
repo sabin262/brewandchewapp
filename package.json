@@ -1,5 +1,7 @@
 {
   "name": "brewandchewapp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "pwa-rails": "^4.0.4"
+  }
 }

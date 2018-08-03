@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- <link rel="manifest" href="/src/views/pwa/apps/manifests/_app.json"> -->
+    <%= component 'pwa/manifest', url: request.base_url  %>
     <title>Brewandchewapp</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
